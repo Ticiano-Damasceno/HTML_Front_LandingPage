@@ -7,10 +7,6 @@ body {
     padding: 0;
 }
 
-body a {
-    text-decoration: none;
-}
-
 .cabecalho {
     color: var(--color1);
     width: 100wh;
@@ -21,8 +17,29 @@ body a {
 }
 
 .cabecalho__menu {
-    
+    display: flex;
+}
+
+.cabecalho__menu a {
+    text-decoration: none;
+}
+
+.logo {
+    padding-right: 76px;
+}
+
+.menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 56px;
+}
+
+.cabecalho__profile {
+    display: flex;
+    gap: 56px;
+}
+
+.cabecalho__profile img {
+    padding-right: 12px;
 }
