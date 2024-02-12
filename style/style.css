@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 :root {
     --color1: #36485C;
+    --color2: #4328EB;
 }
 
 body {
     margin: 0;
     padding: 0;
+    width: 100wh;
 }
 
 .cabecalho {
@@ -14,14 +18,17 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 24px 80px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin-bottom: 44px;
+}
+
+.cabecalho a {
+    text-decoration: none;
 }
 
 .cabecalho__menu {
     display: flex;
-}
-
-.cabecalho__menu a {
-    text-decoration: none;
 }
 
 .logo {
@@ -37,9 +44,67 @@ body {
 
 .cabecalho__profile {
     display: flex;
+    align-items: center;
     gap: 56px;
 }
 
-.cabecalho__profile img {
-    padding-right: 12px;
+.cabecalho__profile__login {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__profile__login i {
+    margin-right: 12px;
+    color: var(--color1);
+    font-size: 26px;
+}
+
+.sub_cabecalho {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    margin: 0 auto;
+    width: 846px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.sub_cabecalho h1 {
+    font-size: 64px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sub_cabecalho h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color1);
+    margin: 0;
+}
+
+.sub_cabecalho__botoes {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.sub_cabecalho__botoes a:first-child {
+    background-color: var(--color2);
+    color: white;
+    border-radius: 4px;
+    
+}
+.sub_cabecalho__botoes a {
+    width: 160px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.mobile{
+    position: relative;
 }
