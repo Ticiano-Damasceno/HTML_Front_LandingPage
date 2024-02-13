@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste posição</title>
+    <style>
+        div {
+            border: 1px solid black;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .d1 {
+            background-color: gray;
+            position: static;
+        }
+        .d2 {
+            background-color: blue;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        .d3 {
+            background-color: red;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .d4 {
+            background-color: blue;
+            position: relative;
+            overflow: hidden;
+        }
+        .d5 {
+            position: absolute;
+            background-color: chocolate;
+            top: 15px;
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">static d1</div>
+    <div class="d2">relative d2</div>
+    <div class="d5">absolute d5</div>
+    <div class="d4">
+        relative d4
+        <div class="d3">absolute d3</div>
+    </div>
+</body>
+</html>

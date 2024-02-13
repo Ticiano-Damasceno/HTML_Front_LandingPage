@@ -3,12 +3,16 @@
 :root {
     --color1: #36485C;
     --color2: #4328EB;
+    --color3: #D5CFFA;
 }
 
 body {
     margin: 0;
     padding: 0;
     width: 100wh;
+    background: 
+        linear-gradient(to bottom, white 50%,transparent 60%) no-repeat,
+        linear-gradient(to left, #FF5222, #F800AF ,#975BEB) no-repeat;
 }
 
 .cabecalho {
@@ -60,6 +64,7 @@ body {
 }
 
 .sub_cabecalho {
+    position: relative;
     font-family: 'Inter', sans-serif;
     display: flex;
     margin: 0 auto;
@@ -105,6 +110,50 @@ body {
     text-decoration: none;
 }
 
-.mobile{
-    position: relative;
+.sub_cabecalho__botoes p {
+    color: var(--color2);
+}
+
+.sub_cabecalho__botoes i {
+    background-color: var(--color3);
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+}
+
+.principal {
+    margin: 60px 10% 64px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.template {
+    width: 90%;
+}
+
+.rodape {
+    /* margin: 0px 80px 80px 80px; */
+    margin: 0px 5% 5% 5%;
+}
+
+.rodape__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape__item p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter' sans-serif;
+    font-weight: 400;
+}
+
+.rodape__item__links {
+    display: flex;
+    align-items: center;
+    width: 966px;
+    justify-content: space-between;
 }
